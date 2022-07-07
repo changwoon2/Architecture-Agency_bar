@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>중급이론가상클래스</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+      ul li.new:after {
+        content: "new";
+        background-color: dodgerblue;
+        color: #fff;
+        border-radius: 3px;
+        font-size: 13px;
+        padding: 0 5px;
+        margin-left: 5px;
+      }
+      ul li.hot:before {
+        content: "hot";
+        background-color: crimson;
+        color: #fff;
+        border-radius: 3px;
+        font-size: 13px;
+        padding: 0 5px;
+        margin-right: 5px;
+      }
+      ul li:after {
+        content: "주문불가";
+        color: crimson;
+        font-size: 12px;
+        margin-left: 5px;
+      }
+      ul li:before {
+        content: "*";
+        color: dodgerblue;
+        margin-right: 5px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>빅치킨마요 - 3,500원</li>
+      <li class="hot">돈치마요 - 3,500원</li>
+      <li class="new">치킨 샐러드마요 - 3,400원</li>
+      <li>치킨마요 - 2,900원</li>
+    </ul>
+    <ul>
+      <li>카레</li>
+      <li>탕수육</li>
+      <li>군만두</li>
+      <li>짜장면</li>
+      <li>덮밥</li>
+      <li>비빔밥</li>
+    </ul>
+  </body>
+</html>
